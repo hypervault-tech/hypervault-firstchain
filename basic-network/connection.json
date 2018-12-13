@@ -13,7 +13,7 @@
         }
     },
     "channels": {
-        "mychannel": {
+        "hvc": {
             "orderers": [
                 "orderer.example.com"
             ],

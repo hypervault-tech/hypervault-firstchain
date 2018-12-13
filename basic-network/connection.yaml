@@ -9,7 +9,7 @@ client:
                 endorser: '300'
             orderer: '300'
 channels:
-    mychannel:
+    hvc:
         orderers:
         - orderer.example.com
         peers:
