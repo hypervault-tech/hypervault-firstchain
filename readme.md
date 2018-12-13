@@ -30,7 +30,7 @@ To check the channels that this entity is part of, simply run `peer channel list
 
 To install the chaincode, simply run in the `cli` container
 
-```peer chaincode install -p /opt/gopath/src/github.com/hypervault/lowlevel -l node -n hypervault -v 0```
+```peer chaincode install -l node -n hypervault -v 0 -p /opt/gopath/src/github.com/hypervault/lowlevel```
 
 To verify that the chaincode has been successfully installed, run 
 
@@ -41,4 +41,6 @@ Finally, instantiate the chaincode by running
 ```peer chaincode instantiate -n hypervault -v 0 -l node -C mychannel -c '{"Args":[]}'```
 
 The `-c` flag is required even though we do not need any arguments in the `Args` field. 
+
+## Invoking the chaincode
 
