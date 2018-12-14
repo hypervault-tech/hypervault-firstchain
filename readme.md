@@ -63,3 +63,7 @@ Chaincode invoke successful. result: status:200 payload:"[{\"Key\":\"CAR0\",\"Re
 ```
 
 Voila, `hypervault 0.0` is now running!
+
+## Troubleshooting
+
+After a bit of painful debugging, I have discovered that the chaincode file name must match the chaincode name, which should actually seem obvious. 
