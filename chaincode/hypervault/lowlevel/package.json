@@ -1,13 +1,13 @@
 {
-	"name": "hv",
+	"name": "hypervault",
 	"version": "1.0.0",
-	"description": "hv chaincode implemented in node.js",
+	"description": "hypervault chaincode implemented in node.js",
 	"engines": {
 		"node": ">=8.4.0",
 		"npm": ">=5.3.0"
 	},
 	"scripts": {
-		"start": "node hv.js"
+		"start": "node hypervault.js"
 	},
 	"engine-strict": true,
 	"license": "Apache-2.0",
