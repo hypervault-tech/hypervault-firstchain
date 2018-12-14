@@ -44,3 +44,22 @@ The `-c` flag is required even though we do not need any arguments in the `Args`
 
 ## Invoking the chaincode
 
+Run in the `cli` container
+
+```
+peer chaincode invoke -n hypervault -C mychannel -c '{"Function":"initLedger", "Args":[]}'
+```
+
+This initialises the ledger by calling the `initLedger` chaincode function. Now let's check the results!
+
+```
+peer chaincode invoke -n hypervault -C mychannel -c '{"Function":"queryAllCars", "Args":[]}'
+```
+
+And you should see the result as 
+
+```
+Chaincode invoke successful. result: status:200 payload:"[{\"Key\":\"CAR0\",\"Record\":{\"color\":\"Absolutely transparent\",\"docType\":\"car\",\"make\":\"HyperSecure\",\"model\":\"Super confidential\",\"owner\":\"HyperVault\"}}]"
+```
+
+Voila, `hypervault 0.0` is now running!
